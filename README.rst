@@ -1,4 +1,4 @@
-These are the tests for the TheoDORE program.
+These are the tests for the `TheoDORE program <https://github.com/felixplasser/theodore-qc>`_.
 
 TheoDORE
 --------
