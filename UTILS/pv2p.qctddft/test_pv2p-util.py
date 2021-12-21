@@ -3,4 +3,18 @@
 from theodore import lib_pytest
 
 def test_standard():
-    lib_pytest.pytest_job(__file__).run_utils()
+    pjob = lib_pytest.pytest_job(__file__)
+    
+    stdin = open('../IN_FILES/plot_omfrag.in', 'r').read()
+    pjob.run_util('plot_omfrag', stdin)
+
+    stdin = open('../IN_FILES/plot_om_bars.in', 'r').read()
+    pjob.run_util('plot_om_bars', stdin)
+
+    stdin = open('../IN_FILES/plot_frag_decomp.in', 'r').read()
+    pjob.run_util('plot_frag_decomp', stdin)
+
+    stdin = open('../IN_FILES/spectrum.in', 'r').read()
+    pjob.run_util('spectrum tden_summ.txt tden_summ2.txt', stdin)
+
+    pjob.check()
