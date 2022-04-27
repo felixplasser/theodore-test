@@ -1,50 +1,26 @@
 
-load "merged.mld" FILTER "nosort"
+load "molden_no_ci.drt1.state2.sp" FILTER "nosort"
 mo titleformat ''
 rotate best
+rotate x 10.000
+rotate y 10.000
+rotate z 10.000
 background white
 mo fill
-mo cutoff 0.050
+mo cutoff 0.030
 
 mo color orange green
-mo 1
-write image pngt "merged-mld_MO_1.png"
+mo 15
+write image pngt "molden_no_ci-drt1-state2-sp_MO_15.png"
 mo color orange green
-mo 2
-write image pngt "merged-mld_MO_2.png"
+mo 16
+write image pngt "molden_no_ci-drt1-state2-sp_MO_16.png"
 mo color orange green
-mo 3
-write image pngt "merged-mld_MO_3.png"
+mo 17
+write image pngt "molden_no_ci-drt1-state2-sp_MO_17.png"
 mo color orange green
-mo 4
-write image pngt "merged-mld_MO_4.png"
+mo 18
+write image pngt "molden_no_ci-drt1-state2-sp_MO_18.png"
 mo color orange green
-mo 5
-write image pngt "merged-mld_MO_5.png"
-mo color orange green
-mo 6
-write image pngt "merged-mld_MO_6.png"
-mo color orange green
-mo 7
-write image pngt "merged-mld_MO_7.png"
-mo color orange green
-mo 8
-write image pngt "merged-mld_MO_8.png"
-mo color orange green
-mo 9
-write image pngt "merged-mld_MO_9.png"
-mo color orange green
-mo 10
-write image pngt "merged-mld_MO_10.png"
-mo color orange green
-mo 11
-write image pngt "merged-mld_MO_11.png"
-mo color orange green
-mo 12
-write image pngt "merged-mld_MO_12.png"
-mo color orange green
-mo 13
-write image pngt "merged-mld_MO_13.png"
-mo color orange green
-mo 14
-write image pngt "merged-mld_MO_14.png"
+mo [ 1.240 15 1.209 16 0.797 17 0.735 18] squared
+write image pngt "molden_no_ci-drt1-state2-sp_dens_plus.png"
