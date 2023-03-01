@@ -1,0 +1,116 @@
+================================================================================
+|                                 TheoDORE 3.0                                 |
+|         Theoretical Density, Orbital Relaxation and Exciton analysis         |
+|                                                                              |
+|                            Author: Felix Plasser                             |
+|             Contributions by: L. Stojanovic, G. Hermann, S. Mai,             |
+|                          M.F.S.J. Menger, P. Kimber                          |
+--------------------------------------------------------------------------------
+|                       References for the modules used                        |
+|        (see also http://theodore-qc.sourceforge.net/literature.html)         |
+|                                                                              |
+|   Transition density matrix analysis:                                        |
+|     F. Plasser and H. Lischka                                                |
+|     J. Chem. Theory Comput. (2012), 8, 2777.                                 |
+|                                                                              |
+|   Transition and difference density matrix analysis:                         |
+|     F. Plasser, M. Wormit, A. Dreuw                                          |
+|     J. Chem. Phys. (2014), 141, 024106.                                      |
+|                                                                              |
+|   Conditional densities and DNTOs:                                           |
+|     F. Plasser                                                               |
+|     ChemPhotoChem (2019), DOI: 10.1002/cptc.201900014.                       |
+|                                                                              |
+|   Electron-hole entanglement:                                                |
+|     F. Plasser                                                               |
+|     J. Chem. Phys. (2016), 144, 194107.                                      |
+|                                                                              |
+|   orbkit for orbital/density plotting (http://orbkit.github.io):             |
+|     G. Hermann, V. Pohl, J. C. Tremblay, B. Paulus, H.-C. Hege, A. Schild    |
+|     J. Comput. Chem. (2016), 37, 1511.                                       |
+|                                                                              |
+|   Program citation:                                                          |
+|     F. Plasser, J. Chem. Phys. (2020), 152, 084108.                          |
+--------------------------------------------------------------------------------
+|                      Transition density matrix analysis                      |
+================================================================================
+
+Finished parsing molden.input
+
+MO file molden.input parsed.
+Number of atoms: 8
+Number of MOs read in: 68
+Dimension: 68,68,...,68
+Number of basis functions parsed:  68
+Performing Lowdin orthogonalization
+Finished parsing file ricc2.out
+
+Reading structure from mo_file molden.input
+Number of atoms: 8
+Composition: C2 H4 O2 
+
+Computation of Omega matrix ...
+Computation of Omega matrix ...
+Computation of Omega matrix ...
+Computation of Omega matrix ...
+Computation of Omega matrix ...
+Computation of Omega matrix ...
+Calculating NTOs as cube files with orbkit for state 1(1)a
+Calculating NTOs as cube files with orbkit for state 2(1)a
+Calculating NTOs as cube files with orbkit for state 3(1)a
+Calculating NTOs as cube files with orbkit for state 4(1)a
+Calculating NTOs as cube files with orbkit for state 5(1)a
+Calculating NTOs as cube files with orbkit for state 6(1)a
+
+Jmol input file nto_jmol.spt and nto.html written
+   Run as: jmol -n nto_jmol.spt
+
+*** Computing domain NTOs ... ***
+DNTOs for  1(1)a
+Calculating particle/hole density with orbkit for 1-1-a_hole-F01
+Calculating particle/hole density with orbkit for 1-1-a_hole-F02
+DNTOs for  2(1)a
+Calculating particle/hole density with orbkit for 2-1-a_hole-F01
+Calculating particle/hole density with orbkit for 2-1-a_hole-F02
+DNTOs for  3(1)a
+Calculating particle/hole density with orbkit for 3-1-a_hole-F01
+Calculating particle/hole density with orbkit for 3-1-a_hole-F02
+DNTOs for  4(1)a
+Calculating particle/hole density with orbkit for 4-1-a_hole-F01
+Calculating particle/hole density with orbkit for 4-1-a_hole-F02
+DNTOs for  5(1)a
+Calculating particle/hole density with orbkit for 5-1-a_hole-F01
+Calculating particle/hole density with orbkit for 5-1-a_hole-F02
+DNTOs for  6(1)a
+Calculating particle/hole density with orbkit for 6-1-a_hole-F01
+Calculating particle/hole density with orbkit for 6-1-a_hole-F02
+
+Jmol input file dnto_hole_jmol.spt and dnto_hole.html written
+   Run as: jmol -n dnto_hole_jmol.spt
+
+Jmol input file dnto_elec_jmol.spt and dnto_elec.html written
+   Run as: jmol -n dnto_elec_jmol.spt
+Calculating particle/hole density with orbkit for 1-1-a
+Calculating particle/hole density with orbkit for 2-1-a
+Calculating particle/hole density with orbkit for 3-1-a
+Calculating particle/hole density with orbkit for 4-1-a
+Calculating particle/hole density with orbkit for 5-1-a
+Calculating particle/hole density with orbkit for 6-1-a
+Transition density between ground state and excited state 1(1)a
+Transition density between ground state and excited state 2(1)a
+Transition density between ground state and excited state 3(1)a
+Transition density between ground state and excited state 4(1)a
+Transition density between ground state and excited state 5(1)a
+Transition density between ground state and excited state 6(1)a
+
+state       dE(eV)    f     Om    POS     PR     CT    COH   CTnt  PRNTO   Z_HE
+--------------------------------------------------------------------------------
+1(1)a       4.174  0.000  0.950  1.500  2.000  0.027  1.056  0.000  1.943  2.000
+2(1)a       4.192  0.000  0.961  1.500  2.000  0.032  1.067 -0.000  1.952  1.999
+3(1)a       7.944  0.000  0.971  1.500  2.000  0.167  1.385  0.000  1.849  1.937
+4(1)a       8.021  0.164  0.968  1.500  2.000  0.198  1.467 -0.000  1.882  1.958
+5(1)a       8.755  0.000  0.973  1.500  2.000  0.851  1.341 -0.000  1.991  2.012
+6(1)a       8.763  0.052  0.973  1.500  2.000  0.816  1.429  0.000  1.998  2.015
+
+Final output copied to tden_summ.txt
+CPU time:  9.6 s, wall time: 10.6 s
