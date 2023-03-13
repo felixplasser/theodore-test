@@ -8,3 +8,4 @@ prop_list=['p']
 output_file='sden_summ.txt.mcscf'
 output_prec=(10, 6)
 mcfmt='% 10E'
+prop_list=['nu', 'nunl', 'p', 'eta', 'y0', 'y1']

@@ -1,0 +1,136 @@
+================================================================================
+|                                 TheoDORE 3.0                                 |
+|         Theoretical Density, Orbital Relaxation and Exciton analysis         |
+|                                                                              |
+|                            Author: Felix Plasser                             |
+|             Contributions by: L. Stojanovic, G. Hermann, S. Mai,             |
+|                          M.F.S.J. Menger, P. Kimber                          |
+--------------------------------------------------------------------------------
+|                       References for the modules used                        |
+|        (see also http://theodore-qc.sourceforge.net/literature.html)         |
+|                                                                              |
+|   Transition density matrix analysis:                                        |
+|     F. Plasser and H. Lischka                                                |
+|     J. Chem. Theory Comput. (2012), 8, 2777.                                 |
+|                                                                              |
+|   Transition and difference density matrix analysis:                         |
+|     F. Plasser, M. Wormit, A. Dreuw                                          |
+|     J. Chem. Phys. (2014), 141, 024106.                                      |
+|                                                                              |
+|   Exciton analysis:                                                          |
+|     S. A. Baeppler, F. Plasser, M. Wormit, A. Dreuw                          |
+|     Phys. Rev. A (2014), 90, 052521.                                         |
+|                                                                              |
+|   Approximate RMSeh/dexc formula:                                            |
+|     S. A. Mewes, J.-M. Mewes, A. Dreuw, F. Plasser                           |
+|     Phys. Chem. Chem. Phys. (2016), 18, 2548.                                |
+|                                                                              |
+|   Program citation:                                                          |
+|     F. Plasser, J. Chem. Phys. (2020), 152, 084108.                          |
+--------------------------------------------------------------------------------
+|                      Transition density matrix analysis                      |
+================================================================================
+
+Finished parsing MOLDEN/molden_mo_mc.sp
+
+MO file MOLDEN/molden_mo_mc.sp parsed.
+Number of atoms: 8
+Number of MOs read in: 44
+Dimension: 44,44,...,44
+Number of basis functions parsed:  44
+Performing Lowdin orthogonalization
+Reading trncils.FROMdrt1.state1TOdrt1.state2 ...
+file LISTINGS/trncils.FROMdrt1.state1TOdrt1.state2, reading:
+          symm-trans density matrix: diagonal part
+( 6-> 7)-(5a'->6a'), val= -0.1073
+( 7-> 8)-(6a'->7a'), val= -0.4574
+(28->29)-(5a"->6a"), val= -0.1075
+(29->30)-(6a"->7a"), val= -0.4158
+reading ...
+          asymm-trans density matrix: diagonal part
+( 6-> 7)-(5a'->6a'), val=  0.1033
+( 7-> 8)-(6a'->7a'), val= -0.4799
+(28->29)-(5a"->6a"), val=  0.1032
+(29->30)-(6a"->7a"), val= -0.4374
+Reading trncils.FROMdrt1.state1TOdrt1.state3 ...
+file LISTINGS/trncils.FROMdrt1.state1TOdrt1.state3, reading:
+          symm-trans density matrix: diagonal part
+reading ...
+          asymm-trans density matrix: diagonal part
+Skipping trncils.FROMdrt1.state2TOdrt1.state3 (does not match ref_state)
+(1, 2)
+(1, 1)
+
+Reading structure from coor_file geom.xyz
+Number of atoms: 8
+Composition: C2 H4 O2 
+
+Computation of Omega matrix ...
+Computation of Omega matrix ...
+
+*** Electron/hole population analysis ***
+
+Decomposition over fragments
+DRT1.St02
+-------------------------------------------------------
+       Fragment        h+        e-       sum      diff
+-------------------------------------------------------
+        C H2 O    0.42404   0.42404   0.84808   0.00000
+        C H2 O    0.42404   0.42404   0.84808   0.00000
+-------------------------------------------------------
+                  0.84808   0.84808   1.69617   0.00000
+-------------------------------------------------------
+
+DRT1.St03
+-------------------------------------------------------
+       Fragment        h+        e-       sum      diff
+-------------------------------------------------------
+        C H2 O    0.00000   0.00000   0.00001  -0.00000
+        C H2 O    0.00000   0.00000   0.00001   0.00000
+-------------------------------------------------------
+                  0.00001   0.00001   0.00002   0.00000
+-------------------------------------------------------
+
+File ehFrag.txt with information about e/h populations written.
+
+Decomposition over individual atoms
+DRT1.St02
+--------------------------------------------------------
+  Atom        h+        e-       sum      diff     trans
+--------------------------------------------------------
+  C  1   0.00290   0.20151   0.20442  -0.19861   0.00000
+  C  2   0.00290   0.20151   0.20442  -0.19861   0.00000
+  O  3   0.37487   0.22237   0.59724   0.15250  -0.00000
+  O  4   0.37487   0.22237   0.59724   0.15250  -0.00000
+  H  5   0.02313   0.00008   0.02321   0.02305  -0.00002
+  H  6   0.02313   0.00008   0.02321   0.02305  -0.00002
+  H  7   0.02313   0.00008   0.02321   0.02305   0.00002
+  H  8   0.02313   0.00008   0.02321   0.02305   0.00002
+--------------------------------------------------------
+         0.84808   0.84808   1.69617   0.00000  -0.00000
+--------------------------------------------------------
+
+DRT1.St03
+--------------------------------------------------------
+  Atom        h+        e-       sum      diff     trans
+--------------------------------------------------------
+  C  1   0.00000   0.00000   0.00000   0.00000  -0.00002
+  C  2   0.00000   0.00000   0.00000   0.00000  -0.00002
+  O  3   0.00000   0.00000   0.00001  -0.00000   0.00002
+  O  4   0.00000   0.00000   0.00001  -0.00000   0.00002
+  H  5   0.00000   0.00000   0.00000  -0.00000   0.00000
+  H  6   0.00000   0.00000   0.00000  -0.00000   0.00000
+  H  7   0.00000   0.00000   0.00000  -0.00000   0.00000
+  H  8   0.00000   0.00000   0.00000  -0.00000   0.00000
+--------------------------------------------------------
+         0.00001   0.00001   0.00002  -0.00000  -0.00000
+--------------------------------------------------------
+
+
+state          dE(eV)       f        Om       POS        PR        CT       COH      CTnt     PRNTO     RMSeh
+--------------------------------------------------------------------------------------------------------------
+DRT1.St02   3.971554  0.000000  0.848083  1.500000  2.000000  0.003771  1.007570  0.000000  1.986699  0.966770
+DRT1.St03   7.150770  0.000000  0.000009  1.500000  2.000000  0.999608  1.000785  0.000000  2.026402  3.612460
+
+Final output copied to tden_summ.txt.mrci.Om2
+CPU time:  0.0 s, wall time: 0.0 s
