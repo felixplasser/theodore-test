@@ -1,0 +1,4 @@
+rtype='libwfa'
+at_lists=[[1], [2, 3]]
+eh_pop=1
+prop_list=['Om', 'POS', 'PR', 'CT', 'COH', 'CTnt']

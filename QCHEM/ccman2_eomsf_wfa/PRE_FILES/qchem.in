@@ -1,0 +1,33 @@
+$comment
+SF-CCSD libwa analysis for EOM-SF states
+Methylene, 3B2 reference
+$end
+
+$molecule
+0 3
+C
+H  1 rCH
+H  1 rCH 2 aHCH
+
+rCH    = 1.083
+aHCH   = 145.
+$end
+
+$rem
+jobtype            SP            single point
+method             eom-ccsd
+BASIS              6-31G*
+N_FROZEN_CORE      1
+SF_STATES          [2,0,0,2]
+cc_trans_prop = true           ! Compute transition properties
+cc_state_to_opt = [4,1]        ! relative to the lowest state in second irrep 
+cc_eom_prop = true
+CC_CONVERGENCE 11
+EOM_DAVIDSON_CONVERGENCE 8
+! Below are libwa keywords
+state_analysis = true
+molden_format  = true
+nto_pairs      = 4
+pop_mulliken   = true
+$end
+

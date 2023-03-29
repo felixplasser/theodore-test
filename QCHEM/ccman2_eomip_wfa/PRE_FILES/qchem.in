@@ -1,0 +1,27 @@
+$ COMMENT
+    Performing an EOM-IP-CCSD calculation followed by libwfa
+$end
+
+$molecule
+   0 1
+   He
+   He   1       R1
+   He   2       R1      1       A
+
+   R1=1.236447
+   A=180.00
+$end
+
+$rem
+ JOBTYPE           = SP 
+ METHOD            = EOM-CCSD
+ BASIS             = 6-31G
+ IP_STATES         = [1,0,0,0,0,1,0,0]
+ CC_EOM_PROP = True
+ CC_STATE_TO_OPT = [1,1]       ! 2nd state of the first irreducible representation
+ CC_TRANS_PROP = TRUE
+ STATE_ANALYSIS = TRUE
+ molden_format  = true
+ nto_pairs      = 2
+$end
+

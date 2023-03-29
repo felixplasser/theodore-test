@@ -1,0 +1,34 @@
+$comment
+coupled cluster excited states: evaluate the
+8 lowest singlet excited states of formaldehyde 
+from the CCSD ground state.
+using regular integral transformation
+$end
+
+$molecule
+0 1
+O
+C,1,R1
+H,2,R2,1,A
+H,2,R2,1,A,3,180.
+
+R1=1.4
+R2=1.0
+A=120.
+$end
+
+$rem
+method         eom-ccsd
+basis          6-31G*
+n_frozen_core  fc
+ee_singlets    [0,0,2,2]
+ee_triplets    [0,2,0,2]
+eom_nguess_singles 3
+cc_trans_prop  true
+state_analysis true
+molden_format  true
+nto_pairs      3
+pop_mulliken   true
+eom_davidson_convergence 6
+$end
+

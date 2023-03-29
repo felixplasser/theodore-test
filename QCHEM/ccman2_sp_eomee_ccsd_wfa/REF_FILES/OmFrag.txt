@@ -1,0 +1,9 @@
+2
+eomee_ccsd-rhfref-triplets-2-1  0.80590  0.30897  0.41673  0.01528  0.03497
+eomee_ccsd-rhfref-triplets-4-1  0.81183  0.25318  0.31092  0.06918  0.16357
+eomee_ccsd-rhfref-singlets-4-1  0.78109  0.22628  0.29741  0.08618  0.15338
+eomee_ccsd-rhfref-triplets-2-2  0.81100  0.01889  0.01729  0.18816  0.42008
+eomee_ccsd-rhfref-singlets-3-1  0.85718  0.08923  0.58739  0.00177  0.04914
+eomee_ccsd-rhfref-singlets-3-2  0.86093 -0.02043  0.45226 -0.00257  0.04139
+eomee_ccsd-rhfref-triplets-4-2  0.80979  0.08808  0.36067  0.00396  0.31575
+eomee_ccsd-rhfref-singlets-4-2  0.76872  0.02130  0.21028  0.01757  0.15329

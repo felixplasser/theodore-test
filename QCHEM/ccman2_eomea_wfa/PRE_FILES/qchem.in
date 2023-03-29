@@ -1,0 +1,26 @@
+$comment
+EOM-EA libwfa analysis.
+$end
+
+$molecule
++1 1
+N       -2.064064000      2.748088000     -4.243225000
+H       -2.777957000      2.021714000     -4.270044000
+H       -1.472560000      2.550382000     -3.437599000
+H       -1.484733000      2.622655000     -5.071834000
+Na      -3.047412000      5.008747000     -4.132920000
+$end
+
+$rem
+jobtype = sp
+method = eom-ccsd
+basis = 6-31+G*
+ea_states = [3]
+cc_eom_prop = true
+cc_trans_prop = true
+cc_state_to_opt = [1,1]
+STATE_ANALYSIS = TRUE
+molden_format  = true
+nto_pairs      = 4
+$end
+
