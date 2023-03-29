@@ -1,0 +1,39 @@
+$comment
+ADC(3) calculation of excited states of H2O:
+- restricted, no symmetry
+- 4 singlet and 4 triplet states
+- 4 single and 4 double guesses
+- state properties are requested
+$end
+
+$molecule 
+0 1
+O
+H  1  0.957
+H  1  0.957  2   104.5
+$end
+
+$rem
+jobtype = sp
+method = adc(1)
+n_frozen_core = 0
+basis = 3-21g
+ee_singlets = 4
+ee_triplets = 4
+cc_symmetry = false
+state_analysis = true
+make_cube_files = true
+molden_format = true
+nto_pairs = 3
+$end
+
+$plots
+Plot all four types of quantities
+40 -3.0 3.0
+40 -3.0 3.0
+40 -3.0 3.0
+0 0 2 2
+1 2 
+1 2
+$end
+

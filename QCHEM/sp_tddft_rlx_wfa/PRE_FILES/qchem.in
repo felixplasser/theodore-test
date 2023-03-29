@@ -1,0 +1,28 @@
+$comment
+Excited state analysis of formaldehyde
+PBE/def2-SV(P) level
+Relaxed densities and lowdin populations.
+$end
+
+$rem
+jobtype = sp
+basis = def2-sv(p)
+method = pbe
+cis_n_roots = 2
+cis_singlets = true
+cis_triplets = true
+cis_relaxed_density = true
+rpa = false
+state_analysis = true
+lowdin_population = true
+nto_pairs = 3
+$end
+
+$molecule
+0 1
+6 0 0 0.523383
+8 -0 0 -0.671856
+1 0.931138 0 1.11728
+1 -0.931138 0 1.11728
+$end
+
