@@ -1,0 +1,25 @@
+$comment
+Excited state analysis of water CIS/6-31G*
+$end
+
+$molecule
+0 1
+O
+H1 O OH
+H2 O OH H1 HOH
+
+OH  = 0.990
+HOH = 100.0
+$end
+
+$rem
+method         cis
+basis          6-31g*    basis
+cis_n_roots    3         number of cis states
+cis_singlets   true      do singlets
+cis_triplets   true      don't do triplets
+state_analysis true      activate wfa state analysis
+molden_format  true
+nto_pairs      5
+pop_mulliken   true
+$end

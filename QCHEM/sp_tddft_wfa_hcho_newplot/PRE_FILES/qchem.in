@@ -1,0 +1,27 @@
+$molecule
+0 1
+  C    0.0000000   -0.0000000   -0.6133791
+  O   -0.0000000    0.0000000    0.6060734
+  H    0.0000000    0.9391300   -1.1555819
+  H    0.0000000   -0.9391300   -1.1555819
+$end
+
+$comment
+General excited-state analysis for TDDFT
+with the plots section in the new format
+$end
+
+$rem
+   METHOD           PBE0
+   BASIS            6-31+G*
+   CIS_N_ROOTS      2
+   CIS_TRIPLETS     false
+   MAKE_CUBE_FILES  true
+   PLOTS            true
+   STATE_ANALYSIS   true
+$end
+
+$plots
+   grid_points                    30 30 30
+   alpha_molecular_orbital        8-9
+$end

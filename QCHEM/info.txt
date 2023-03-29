@@ -1,0 +1,4 @@
+The input files are taken from the Q-Chem sample jobs.
+
+To use these jobs, one has to first run Q-Chem and then pytest. To do this, run:
+./run_qchem.bash [cs]*

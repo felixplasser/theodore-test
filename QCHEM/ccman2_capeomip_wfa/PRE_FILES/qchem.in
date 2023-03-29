@@ -1,0 +1,43 @@
+$comment
+CAP-EOMIP libwfa calculations of water, using C2V symmetry.
+$end
+
+$molecule
+0 1
+O   0.00000000     0.00000000     0.13594219
+H   0.00000000    -1.44761450    -1.07875060
+H   0.00000000     1.44761450    -1.07875060
+$end
+
+$rem
+jobtype    sp
+method     eom-ccsd
+BASIS      aug-cc-pVDZ
+INPUT_BOHR TRUE
+complex_ccman 1
+cc_memory  2000
+mem_total  2500
+SCF_CONVERGENCE 12
+CC_CONVERGENCE 11
+EOM_DAVIDSON_CONVERGENCE 11
+CC_EOM_PROP  TRUE
+CC_TRANS_PROP TRUE
+CC_FULLRESPONSE FALSE
+ip_states [1,0,1,1]
+CC_STATE_TO_OPT [1,1]
+! WFA keywords
+state_analysis = true
+molden_format  = true
+nto_pairs      = 4
+pop_mulliken   = true
+$end
+
+$complex_ccman
+CS_HF 1
+CAP_TYPE 1
+CAP_ETA 10000
+CAP_X 2000
+CAP_Y 2500
+CAP_Z 2500
+$end
+
