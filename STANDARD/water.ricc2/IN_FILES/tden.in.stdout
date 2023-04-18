@@ -9,5 +9,5 @@ comp_ntos=True
 comp_dntos=False
 jmol_orbitals=True
 molden_orbitals=False
-prop_list=['Om', 'POS', 'PR', 'CT', 'COH', 'CTnt', 'PRNTO', 'Z_HE', 'RMSeh']
+prop_list=['Om', 'POS', 'PR', 'CT', 'COH', 'CTnt', 'PRNTO', 'Z_HE', 'RMSeh', 'LOCa', 'LOC', 'QTa', 'QT2']
 output_file='tden_summ_stdout.txt'
