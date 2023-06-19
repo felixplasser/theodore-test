@@ -9,3 +9,5 @@ coor_format='col'
 prop_list=['Om', 'Phe', 'POS', 'PR', 'CT', 'COH', 'CTnt', 'PRNTO', 'RMSeh', 'LOC', 'LOCa', 'QT2', 'QTa']
 output_prec=(10,6)
 s_or_t='t'
+Om_formula=2
+output_file='summ_Om2.txt'
