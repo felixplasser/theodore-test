@@ -1,10 +1,10 @@
 ================================================================================
-|                              TheoDORE 3.0_alpha                              |
+|                                TheoDORE 3.1.1                                |
 |         Theoretical Density, Orbital Relaxation and Exciton analysis         |
 |                                                                              |
 |                            Author: Felix Plasser                             |
 |             Contributions by: L. Stojanovic, G. Hermann, S. Mai,             |
-|                          M.F.S.J. Menger, P. Kimber                          |
+|                   M.F.S.J. Menger, P. Kimber, F. Dinkelbach                  |
 --------------------------------------------------------------------------------
 |                       References for the modules used                        |
 |        (see also http://theodore-qc.sourceforge.net/literature.html)         |
@@ -38,8 +38,6 @@ Number of atoms: 10
 Number of MOs read in: 36
 Dimension: 95,95,...,95
 Number of basis functions parsed:  95
-MO-matrix not square: 95 x 36
-  Using the Moore-Penrose pseudo inverse.
 Finished parsing NOs/triplet_0_1_no.mo
 
 MO file NOs/triplet_0_1_no.mo parsed.
@@ -47,8 +45,6 @@ Number of atoms: 10
 Number of MOs read in: 36
 Dimension: 95,95,...,95
 Number of basis functions parsed:  95
-MO-matrix not square: 95 x 36
-  Using the Moore-Penrose pseudo inverse.
 Finished parsing NOs/singlet_0_1_no.mo
 
 MO file NOs/singlet_0_1_no.mo parsed.
@@ -56,8 +52,6 @@ Number of atoms: 10
 Number of MOs read in: 36
 Dimension: 95,95,...,95
 Number of basis functions parsed:  95
-MO-matrix not square: 95 x 36
-  Using the Moore-Penrose pseudo inverse.
 Finished parsing NOs/triplet_1_1_no.mo
 
 MO file NOs/triplet_1_1_no.mo parsed.
@@ -65,8 +59,6 @@ Number of atoms: 10
 Number of MOs read in: 36
 Dimension: 95,95,...,95
 Number of basis functions parsed:  95
-MO-matrix not square: 95 x 36
-  Using the Moore-Penrose pseudo inverse.
 Finished parsing NOs/singlet_1_1_no.mo
 
 MO file NOs/singlet_1_1_no.mo parsed.
@@ -74,8 +66,6 @@ Number of atoms: 10
 Number of MOs read in: 36
 Dimension: 95,95,...,95
 Number of basis functions parsed:  95
-MO-matrix not square: 95 x 36
-  Using the Moore-Penrose pseudo inverse.
 Finished parsing NOs/singlet_2_1_no.mo
 
 MO file NOs/singlet_2_1_no.mo parsed.
@@ -83,8 +73,6 @@ Number of atoms: 10
 Number of MOs read in: 36
 Dimension: 95,95,...,95
 Number of basis functions parsed:  95
-MO-matrix not square: 95 x 36
-  Using the Moore-Penrose pseudo inverse.
 Finished parsing NOs/triplet_3_1_no.mo
 
 MO file NOs/triplet_3_1_no.mo parsed.
@@ -92,8 +80,6 @@ Number of atoms: 10
 Number of MOs read in: 36
 Dimension: 95,95,...,95
 Number of basis functions parsed:  95
-MO-matrix not square: 95 x 36
-  Using the Moore-Penrose pseudo inverse.
 Finished parsing NOs/triplet_1_2_no.mo
 
 MO file NOs/triplet_1_2_no.mo parsed.
@@ -101,8 +87,6 @@ Number of atoms: 10
 Number of MOs read in: 36
 Dimension: 95,95,...,95
 Number of basis functions parsed:  95
-MO-matrix not square: 95 x 36
-  Using the Moore-Penrose pseudo inverse.
 Finished parsing NOs/singlet_1_2_no.mo
 
 MO file NOs/singlet_1_2_no.mo parsed.
@@ -110,8 +94,6 @@ Number of atoms: 10
 Number of MOs read in: 36
 Dimension: 95,95,...,95
 Number of basis functions parsed:  95
-MO-matrix not square: 95 x 36
-  Using the Moore-Penrose pseudo inverse.
 
 Reading structure from mo_file qchem.mld
 Number of atoms: 10

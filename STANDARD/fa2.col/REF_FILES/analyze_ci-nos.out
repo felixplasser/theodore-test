@@ -1,10 +1,10 @@
 ================================================================================
-|                              TheoDORE 3.0_alpha                              |
+|                                TheoDORE 3.1.1                                |
 |         Theoretical Density, Orbital Relaxation and Exciton analysis         |
 |                                                                              |
 |                            Author: Felix Plasser                             |
 |             Contributions by: L. Stojanovic, G. Hermann, S. Mai,             |
-|                          M.F.S.J. Menger, P. Kimber                          |
+|                   M.F.S.J. Menger, P. Kimber, F. Dinkelbach                  |
 --------------------------------------------------------------------------------
 |                       References for the modules used                        |
 |        (see also http://theodore-qc.sourceforge.net/literature.html)         |
@@ -38,7 +38,6 @@ Number of atoms: 8
 Number of MOs read in: 44
 Dimension: 44,44,...,44
 Number of basis functions parsed:  44
- ... inverting C
 Finished parsing MOLDEN/molden_no_ci.drt1.state2.sp
 
 MO file MOLDEN/molden_no_ci.drt1.state2.sp parsed.
@@ -46,7 +45,6 @@ Number of atoms: 8
 Number of MOs read in: 44
 Dimension: 44,44,...,44
 Number of basis functions parsed:  44
- ... inverting C
 Finished parsing MOLDEN/molden_no_ci.drt1.state3.sp
 
 MO file MOLDEN/molden_no_ci.drt1.state3.sp parsed.
@@ -54,7 +52,6 @@ Number of atoms: 8
 Number of MOs read in: 44
 Dimension: 44,44,...,44
 Number of basis functions parsed:  44
- ... inverting C
 
 Reading structure from mo_file MOLDEN/molden_mo_mc.sp
 Number of atoms: 8
