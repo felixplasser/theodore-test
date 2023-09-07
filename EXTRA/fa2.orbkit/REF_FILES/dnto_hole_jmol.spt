@@ -6,10 +6,10 @@ mo fill
 mo cutoff 0.04
 
 mo color blue red
-mo [ 0.707 16 0.707 15]
+mo [ -0.707 16 -0.707 15]
 write image pngt "NTO1-1-a_hole-F01_1o_0.48.png"
 mo color orange green
-mo [ 0.765 17 0.633 18]
+mo [ -0.765 17 -0.633 18]
 write image pngt "NTO1-1-a_hole-F01_1v_0.48.png"
 
 mo color blue red
@@ -20,10 +20,10 @@ mo [ 0.765 17 -0.633 18]
 write image pngt "NTO1-1-a_hole-F02_1v_0.48.png"
 
 mo color blue red
-mo [ 0.705 15 0.704 16]
+mo [ -0.705 15 -0.704 16]
 write image pngt "NTO2-1-a_hole-F01_1o_0.48.png"
 mo color orange green
-mo [ 0.761 17 0.639 18]
+mo [ -0.761 17 -0.639 18]
 write image pngt "NTO2-1-a_hole-F01_1v_0.48.png"
 
 mo color blue red
@@ -55,10 +55,10 @@ mo [ -0.686 19 0.439 20 -0.427 18 0.393 17]
 write image pngt "NTO4-1-a_hole-F01_1v_0.48.png"
 
 mo color blue red
-mo [ 0.707 15 -0.707 16]
+mo [ -0.707 15 0.707 16]
 write image pngt "NTO4-1-a_hole-F02_1o_0.48.png"
 mo color orange green
-mo [ 0.686 19 0.439 20 -0.427 18 -0.393 17]
+mo [ -0.686 19 -0.439 20 0.427 18 0.393 17]
 write image pngt "NTO4-1-a_hole-F02_1v_0.48.png"
 
 mo color blue red
@@ -76,15 +76,15 @@ mo [ 0.645 18 0.534 17 0.427 19 0.342 20]
 write image pngt "NTO5-1-a_hole-F02_1v_0.49.png"
 
 mo color blue red
-mo [ 0.707 16 0.707 15]
+mo [ -0.707 16 -0.707 15]
 write image pngt "NTO6-1-a_hole-F01_1o_0.49.png"
 mo color orange green
-mo [ -0.617 18 0.522 17 0.458 19 -0.370 20]
+mo [ 0.617 18 -0.522 17 -0.458 19 0.370 20]
 write image pngt "NTO6-1-a_hole-F01_1v_0.49.png"
 
 mo color blue red
-mo [ -0.707 16 0.707 15]
+mo [ 0.707 16 -0.707 15]
 write image pngt "NTO6-1-a_hole-F02_1o_0.49.png"
 mo color orange green
-mo [ 0.617 18 0.522 17 0.458 19 0.370 20]
+mo [ -0.617 18 -0.522 17 -0.458 19 -0.370 20]
 write image pngt "NTO6-1-a_hole-F02_1v_0.49.png"
