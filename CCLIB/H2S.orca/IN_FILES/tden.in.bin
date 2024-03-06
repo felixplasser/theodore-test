@@ -1,4 +1,4 @@
-rtype='orca'
+rtype='cclib'
 rfile='orca.out'
 read_binary=True
 at_lists=[ [1,2,3],[4] ]
